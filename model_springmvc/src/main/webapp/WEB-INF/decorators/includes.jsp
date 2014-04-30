@@ -1,1 +1,5 @@
-<base href="${header["X-Request-Scheme-Ext"] == null ? pageContext.request.scheme : header["X-Request-Scheme-Ext"]}://${pageContext.request.serverName}:${header["X-Request-Server-Port"] == null ? pageContext.request.serverPort : header["X-Request-Server-Port"]}${pageContext.request.contextPath}/" />
+<%  
+String path = request.getContextPath();  
+String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";  
+%>  
+<base href="<%=basePath%>">  
