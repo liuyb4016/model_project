@@ -25,13 +25,13 @@ import cn.liuyb.app.common.domain.BaseEntity;
 		@NamedQuery(name = "VirtualFolder.countByFatherIdAndFolderName",
 				query = "SELECT COUNT(v) From VirtualFolder v WHERE v.userId = :userId AND v.fatherId = :fatherId AND v.folderName like (:folderName)"),
 		@NamedQuery(name = "VirtualFolder.countByUFAndFolderName",
-				query = "SELECT COUNT(v) From VirtualFolder v WHERE v.userId = :userId AND v.fatherId = :fatherId AND v.folderName=:folderName)"),
+				query = "SELECT COUNT(v) From VirtualFolder v WHERE v.userId = :userId AND v.fatherId = :fatherId AND v.folderName=:folderName"),
 		@NamedQuery(name = "VirtualFolder.findByFatherIdAndFolderName",
 				query = "SELECT v From VirtualFolder v WHERE v.userId = :userId AND v.fatherId = :fatherId AND v.folderName  like (:folderName) ORDER BY v.id ASC"),
 		@NamedQuery(name = "VirtualFolder.findByFatherId",
 				query = "SELECT v From VirtualFolder v WHERE  v.fatherId = :fatherId"),
 		@NamedQuery(name = "VirtualFolder.delByIds",
-				query = "DELETE   VirtualFolder v WHERE  v.id IN (:ids)"),
+				query = "DELETE from VirtualFolder v WHERE  v.id IN (:ids)"),
 })
 @JsonIgnoreProperties("files")
 public class VirtualFolder extends BaseEntity{
