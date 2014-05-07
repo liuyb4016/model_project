@@ -13,7 +13,7 @@
 
 	<!-- Scans within the base package of the application for @Components to
 		configure as beans -->
-	<context:component-scan base-package="cn.eshore.app" />
+	<context:component-scan base-package="cn.liuyb.app" />
 	<context:annotation-config /> 
     <task:annotation-driven/>
 	<tx:annotation-driven transaction-manager="transactionManager"/>
@@ -27,7 +27,7 @@
 	<mvc:resources mapping="/resources/**" location="/resources/" />
 		<bean id="validator" class="org.springframework.validation.beanvalidation.LocalValidatorFactoryBean" />
 	<mvc:interceptors>
-		<bean class="cn.eshore.app.web.AuthenticationInterceptor" />
+		<bean class="cn.liuyb.app.web.AuthenticationInterceptor" />
 		<bean class="org.springframework.orm.jpa.support.OpenEntityManagerInViewInterceptor">
 	    	<property name="entityManagerFactory" ref="entityManagerFactory" />
 	  	</bean>
@@ -55,7 +55,7 @@
             <value>52428800</value>
         </property>
     </bean>
-    <bean id="pathConfig" class="cn.eshore.app.common.domain.PathConfig">
+    <bean id="pathConfig" class="cn.liuyb.app.common.domain.PathConfig">
 		<property name="apprepoPath" value="${pathconfig.apprepopath}" />
 		<property name="fileSyPath" value="${pathconfig.filesypath}" />
 		<property name="sysHttpPath" value="${pathconfig.sysHttpPath}" />

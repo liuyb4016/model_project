@@ -29,6 +29,7 @@ import cn.liuyb.app.common.domain.BaseEntity;
 public class User extends BaseEntity {
 
 	private static final long serialVersionUID = -1591685848660375009L;
+	
 	private String name;
 	private String username;
 	private String password;
@@ -42,6 +43,15 @@ public class User extends BaseEntity {
     private Date updateDate;
     @Transient
     private String vcode;
+    //用户角色id
+    private Long roleId;
+    
+	public Long getRoleId() {
+		return roleId;
+	}
+	public void setRoleId(Long roleId) {
+		this.roleId = roleId;
+	}
 	public String getName() {
 		return name;
 	}

@@ -136,7 +136,7 @@ public abstract class AbstractJpaDao<T extends BaseEntity> implements EntityDao<
         }
     }
 
-    private Query createNamedQuery(String namedQuery, Object... propertyValues) {
+    private Query createNamedQuery(String namedQuery, Object[] propertyValues) {
         return createNamedQuery(namedQuery, -1, -1, propertyValues);
     }
 

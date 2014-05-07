@@ -29,7 +29,7 @@
 		<property name="jpaVendorAdapter">
 			<bean class="org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter">
 				<property name="showSql" value="true" />
-				<property name="generateDdl" value="false" />
+				<property name="generateDdl" value="true" />
 				<property name="databasePlatform" value="${db.dialect}" />
 			</bean>
 		</property>		
@@ -52,13 +52,6 @@
                 <prop key="hibernate.memcached.memcacheClientFactory">${hibernate.memcached.memcacheClientFactory}</prop>
                 <prop key="hibernate.memcached.servers">${hibernate.memcached.servers}</prop>
                 <prop key="hibernate.memcached.cacheTimeSeconds">${hibernate.memcached.cacheTimeSeconds}</prop>
-                <!-- <prop key="hibernate.memcached.keyStrategy">${hibernate.memcached.keyStrategy}</prop>
-                <prop key="hibernate.memcached.readBufferSize">${hibernate.memcached.readBufferSize}</prop>                
-                <prop key="hibernate.memcached.operationTimeout">${hibernate.memcached.operationTimeout}</prop>
-                <prop key="hibernate.memcached.hashAlgorithm">${hibernate.memcached.hashAlgorithm}</prop>
-                <prop key="hibernate.memcached.commandFactory">${hibernate.memcached.commandFactory}</prop>
-                <prop key="hiberante.memcached.sessionLocator">${hibernate.memcached.sessionLocator}</prop> -->
-                
 				<!-- second level cache end -->
 			</props>
 		</property>

@@ -67,4 +67,14 @@ public class UserServiceImpl implements UserService {
 	public List<User> findByUsernameNotSelf(String username, Long id) {
 		return userDao.findByUsernameNotSelf(username, id);
 	}
+
+	@Override
+	public Long getUserRoleByUserId(Long userId) {
+		User user = this.findById(userId);
+		Long roleId = 0L;
+		if(user!=null){
+			roleId = user.getRoleId();
+		}
+		return roleId;
+	}
 }

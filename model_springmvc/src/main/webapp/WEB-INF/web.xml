@@ -50,7 +50,7 @@
 		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
 	</listener>
    	<listener>
-		<listener-class>cn.eshore.app.listener.ServletContextListener</listener-class>
+		<listener-class>cn.liuyb.app.listener.ServletContextListener</listener-class>
   	</listener>
   	
 	<!-- Processes application requests -->

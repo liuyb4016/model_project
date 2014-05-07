@@ -2,6 +2,7 @@ package com.liuyb.app;
 
 import org.junit.Test;
 
+import cn.liuyb.app.common.utils.Constants;
 import cn.liuyb.app.common.utils.MD5;
 
 public class Test1 {
@@ -21,4 +22,10 @@ public class Test1 {
 	    System.out.println(s.length());
 	System.out.println(s.substring(s.lastIndexOf("/")+1,s.length()));
 	} 
+	
+	@Test 
+	public void testV3(){
+		String password =  Constants.getObfuscatePass("123456");
+		System.out.println(password);
+	}
 }

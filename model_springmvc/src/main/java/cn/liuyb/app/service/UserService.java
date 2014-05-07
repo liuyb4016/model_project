@@ -16,4 +16,5 @@ public interface UserService {
 	public void updateUserPassWord(Long userId, String pass)
 			throws IllegalAccessException;
 	public List<User> findByUsernameNotSelf(String username, Long id);
+	public Long getUserRoleByUserId(Long userId);
 }
