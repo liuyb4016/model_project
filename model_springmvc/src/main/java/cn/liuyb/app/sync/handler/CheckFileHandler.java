@@ -7,11 +7,11 @@ import org.springframework.stereotype.Component;
 
 import cn.liuyb.app.common.utils.FileUtil;
 import cn.liuyb.app.common.utils.Slf4jLogUtils;
-import cn.liuyb.app.domain.MobileFile;
-import cn.liuyb.app.domain.User;
-import cn.liuyb.app.service.MobileFileService;
-import cn.liuyb.app.service.UserService;
-import cn.liuyb.app.service.impl.CurrentUser;
+import cn.liuyb.app.portal.domain.MobileFile;
+import cn.liuyb.app.portal.domain.User;
+import cn.liuyb.app.portal.service.MobileFileService;
+import cn.liuyb.app.portal.service.UserService;
+import cn.liuyb.app.portal.service.impl.CurrentUser;
 import cn.liuyb.app.sync.json.CmdConstants;
 import cn.liuyb.app.sync.json.Request;
 import cn.liuyb.app.sync.json.Response;

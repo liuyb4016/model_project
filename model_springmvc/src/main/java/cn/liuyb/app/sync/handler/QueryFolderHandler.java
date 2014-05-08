@@ -2,15 +2,16 @@ package cn.liuyb.app.sync.handler;
 
 import java.util.ArrayList;
 import java.util.List;
+
 import org.slf4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import cn.liuyb.app.common.utils.Slf4jLogUtils;
-import cn.liuyb.app.domain.User;
-import cn.liuyb.app.service.UserService;
-import cn.liuyb.app.service.VirtualFolderService;
-import cn.liuyb.app.service.impl.CurrentUser;
+import cn.liuyb.app.portal.domain.User;
+import cn.liuyb.app.portal.service.UserService;
+import cn.liuyb.app.portal.service.VirtualFolderService;
+import cn.liuyb.app.portal.service.impl.CurrentUser;
 import cn.liuyb.app.sync.json.CmdConstants;
 import cn.liuyb.app.sync.json.Request;
 import cn.liuyb.app.sync.json.Response;

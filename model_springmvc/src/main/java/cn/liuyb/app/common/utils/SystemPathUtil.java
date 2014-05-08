@@ -23,7 +23,7 @@ import org.slf4j.Logger;
 import org.springframework.web.multipart.MultipartFile;
 
 import cn.liuyb.app.common.domain.PathConfig;
-import cn.liuyb.app.domain.App;
+import cn.liuyb.app.portal.domain.App;
 
 public class SystemPathUtil {
 

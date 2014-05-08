@@ -22,7 +22,8 @@ import org.springframework.web.multipart.support.DefaultMultipartHttpServletRequ
 
 import cn.liuyb.app.common.utils.Slf4jLogUtils;
 import cn.liuyb.app.common.utils.TokenUtils;
-import cn.liuyb.app.service.impl.CurrentUser;
+import cn.liuyb.app.portal.service.impl.CurrentUser;
+import cn.liuyb.app.portal.web.NoNeedLoginController;
 import cn.liuyb.app.sync.handler.CmdHandler;
 import cn.liuyb.app.sync.handler.CmdHandlerManager;
 import cn.liuyb.app.sync.handler.HttpServletRequestAwareHandler;
@@ -33,7 +34,6 @@ import cn.liuyb.app.sync.json.ObjectMapperHolder;
 import cn.liuyb.app.sync.json.Request;
 import cn.liuyb.app.sync.json.Response;
 import cn.liuyb.app.sync.json.ResponseHelper;
-import cn.liuyb.app.web.NoNeedLoginController;
 
 @Controller
 @RequestMapping(value = "/request")
